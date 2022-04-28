@@ -10,26 +10,19 @@ const insertionSort = (arr) => {
         let current = arr[i];
         let j;
         //is current greater than last ele
-        for(j = i-1;j >= 0 && arr[j] > current;j--){
-            console.log(
-              "j",
-              j,
-              arr,
-              "behind:",
-              arr[j],
-              "in front of behind:",
-              arr[j + 1],
-              "current",
-              current
-            );  
-            console.log('set arr[j+1 to arr[j]--', 'J index',j, 'val after j',arr[j+1],'J value',arr[j])      
+        for(j = i-1;j >= 0 && arr[j] > current;j--){     
             arr[j + 1] = arr[j];
-            //swapping back into place before the current item     
+            //swapping back into place before the current item.   
+            //replace the values that are behind which are
+            //less than the value ahead
+            //when no more can be swapped - fill the current value stored
+            //using the last J index where the inner loop stopped
         }
         //console.log('J is',j, 'Index j+1 is',j+1, 'i is:',i)
         console.log('j end of loop',j)
         arr[j + 1] = current;
-        console.log('after',arr)
+        //slot current value into the index where J stopped - that has been found to be greater than its value
+
     }
     console.log('final',arr );
     return arr;
