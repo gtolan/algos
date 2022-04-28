@@ -2,7 +2,7 @@
 //from the remaining values and finds the minimum
 //replacing the current value with the remaining min
 //and removing the min that has been moved
-
+//O(n^2))
 
 const swap = (arr,curr,next) => {
     let temp = arr[curr];
@@ -17,7 +17,7 @@ const selectionSort = nums => {
         let remaining = nums.slice(i, nums.length);
         let minVal = Math.min(...remaining);
         let remainingMinValueIndex = remaining.findIndex(el => el === minVal);
-        
+
         if (current > minVal) {
           swap(nums, i, remainingMinValueIndex + i);
         }  

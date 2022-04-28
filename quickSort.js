@@ -1,7 +1,7 @@
 //Pivot and partition
 //bigger values to one side of the pivot smaller to the other
 //recursive breaking list smaller 
-
+//O(log^2(n))
 
 const quickSortRecursive = (originalList)=> {
     let list = [...originalList];
@@ -20,6 +20,7 @@ const quickSortRecursive = (originalList)=> {
       pivot,
       ...quickSortRecursive(bigger),
     ];
+
     return sorted;
 }
 

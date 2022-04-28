@@ -2,7 +2,7 @@
 //J decreases to find the value which is the last
 //number that is bigger than the current value
 //once this number is found = J replaces the current value
-
+//O(n^2))
 
 const insertionSort = (arr) => {
 

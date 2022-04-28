@@ -1,4 +1,5 @@
 //Recursive
+//O(log^2(n)))
 const findNumber = (arr, num) => {
    const target = num;
    if(arr.length == 1) return arr;

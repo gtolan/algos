@@ -3,6 +3,8 @@
 //17 (3*6)-1 //19 (3*6)+1
 //k=1,2,3 *(6) //-1,+1 every iteration of k
 
+//array of 200 O(n)
+
 const isPrime = (numberToTest) => {
     if (numberToTest <= 1) return false;
     if (numberToTest <= 3) return true;
