@@ -1,3 +1,8 @@
+//Generally better than quicksort
+//merge sort is always evenly split, 
+//where quicksort depends on pivot for partition
+//O(log^2(n))
+
 const merge = (left, right) => {
     let sortedArr = [];
     while(left.length && right.length){

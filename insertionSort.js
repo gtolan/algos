@@ -18,8 +18,6 @@ const insertionSort = (arr) => {
             //when no more can be swapped - fill the current value stored
             //using the last J index where the inner loop stopped
         }
-        //console.log('J is',j, 'Index j+1 is',j+1, 'i is:',i)
-        console.log('j end of loop',j)
         arr[j + 1] = current;
         //slot current value into the index where J stopped - that has been found to be greater than its value
 
